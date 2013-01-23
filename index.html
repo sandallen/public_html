@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Le Food Box</title>
+<!-- MOBILE -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">    
+   
+	
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->		
+
+</head>
+
+<body>
+<div class="wrapper">
+<img id="bg" src="img/bg/full_bg.jpg" alt="" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+$(window).load(function() {    
+
+    var theWindow        = $(window),
+        $bg              = $("#bg"),
+        aspectRatio      = $bg.width() / $bg.height();
+                                
+    function resizeBg() {
+        
+        if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+            $bg
+                .removeClass()
+                .addClass('bgheight');
+        } else {
+            $bg
+                .removeClass()
+                .addClass('bgwidth');
+        }
+                    
+    }
+                                
+    theWindow.resize(resizeBg).trigger("resize");
+
+});
+</script>
+
+<div class="header">
+    <h1>Le Food Box</h1>
+    <h2>Savourez la simplicité - Savour simplicity</h2>
+</div>
+<div class="main">
+	<!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+        <form action="http://lefoodbox.us6.list-manage.com/subscribe/post?u=086682a470d56c1917d51ccc4&amp;id=bc12347334" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <h3>Soyez le premier à y goûter, insérez votre courriel ici!</h3>
+            <h3>Be the first to taste, insert your e-mail here!</h3>
+        	
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          
+            <input type="submit" value="go" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </form>
+    </div>
+    <!--End mc_embed_signup-->
+    <div class="footer">© 2013, Le Food Box - Tous droits réservés / All rights reserved</div>
+</div>
+</div>
+</body>
+</html>
