@@ -1,0 +1,35 @@
+/*
+
+Theme Name: Le Food Box Blog
+
+Author: Arseneault Consultation
+
+Author URI: http://www.arseneault.ca
+
+Description: Ce th&egrave;me a &eacute;t&eacute; cr&eacute;&eacute; sp&eacute;cifiquement pour Le Food Box Blog, et h&eacute;rite des capacit&eacute;s du th&egrave;me TwentyEleven de WordPress.org
+
+Version: 1.0
+
+Template: twentyeleven
+
+*/
+
+
+
+
+
+@import url(../twentyeleven/style.css);
+
+
+
+#site-title a {
+
+background:url(img/logo.png) no-repeat top left !important;
+display: block;
+    text-indent:-9999px;
+    height: 200px;
+    width: 135px;
+}
+
+
+
